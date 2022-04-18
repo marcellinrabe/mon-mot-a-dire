@@ -9,3 +9,15 @@ error_reporting(E_ALL);
 
 require("controllers/controller.php");
 
+
+if(empty($_GET["action"])){
+
+    die("action requise");
+}
+
+switch($_GET["action"]){
+    case "home":
+        home();
+    
+}
+    
