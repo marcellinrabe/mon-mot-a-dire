@@ -1,0 +1,22 @@
+{
+  "name": "mon-mot-a-dire",
+  "version": "1.0.0",
+  "description": "sass features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Salama monde\"",
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css -w --style compressed",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marcellinrabe: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@github.com/marcellinrabe/mon-mot-a-dire.git"
+  },
+  "author": "marcellinrabe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcellinrabe/mon-mot-a-dire/issues"
+  },
+  "homepage": "https://github.com/marcellinrabe/mon-mot-a-dire#readme",
+  "browserslist": "last 4 versions"
+}
