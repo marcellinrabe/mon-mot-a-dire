@@ -1,0 +1,10 @@
+@mixin section--rounded{
+    border-radius: 10px;
+
+}
+
+@mixin for-tablette{
+    @media screen and (min-width: get-size(tablette)){
+        @content
+    }
+}

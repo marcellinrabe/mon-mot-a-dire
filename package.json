@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Salama monde\"",
-    "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css -w --style compressed",
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css",
     "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {

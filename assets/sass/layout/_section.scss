@@ -1,0 +1,38 @@
+%section{
+    background-color: $bg-secondary;
+    width: 100%;
+    height: 90vh;
+    @include section--rounded;
+    @include for-tablette{
+        display: flex;
+        align-items: center;
+    }
+}
+
+%section--center{
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+section{
+    height: 100vh;
+    .section-left{
+        @extend %section;
+       
+    }
+    
+    .section-right{
+        @extend %section;
+    }
+
+    .center{
+	@extend %section;
+	@extend %section--center;
+        overflow: hidden auto;
+    }
+
+}
+
+
+
+
