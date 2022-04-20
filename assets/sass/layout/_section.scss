@@ -1,37 +1,22 @@
-%section{
-    background-color: $bg-secondary;
-    width: 100%;
-    height: 90vh;
-    @include section--rounded;
-    @include for-tablette{
-        display: flex;
-        align-items: center;
-    }
+%part-primary{
+    background-color: $bg-primary; 
+    height:  calc( 100vh);
 }
 
-%section--center{
-    background-color: transparent;
-    border-radius: 0px;
+aside{
+    @extend %part-primary; 
+    min-height: 90vh;
 }
 
 section{
-    height: 100vh;
-    .section-left{
-        @extend %section;
-       
-    }
-    
-    .section-right{
-        @extend %section;
-    }
-
-    .center{
-	@extend %section;
-	@extend %section--center;
-        overflow: hidden auto;
-    }
-
+    @extend %part-primary;
+    background-color: $bg-secondary;
+    border-radius: 0px;
+    overflow: hidden scroll;
+  
 }
+
+
 
 
 

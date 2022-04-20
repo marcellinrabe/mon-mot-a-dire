@@ -1,0 +1,11 @@
+@extends("layouts.base")
+
+
+@section("posts")
+    @foreach($posts as $post)
+        <div class="post">
+            <h1 class="post__text">{{ $post["title"] }}</h1>
+            <p>{{ $post["content"] }}</p>
+        </div>
+    @endforeach
+@endsection
